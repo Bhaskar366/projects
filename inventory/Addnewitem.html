@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma One - Medicine Details</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f6fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #1d2330;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar img {
+            width: 150px;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a.active,
+        .sidebar a:hover {
+            background-color: #08979c;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            background-color: #f5f6fa;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .header .search-box {
+            position: relative;
+        }
+
+        .header .search-box input {
+            padding: 10px;
+            width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            padding-left: 40px;
+        }
+
+        .header .search-box input:focus {
+            outline: none;
+            border-color: #08979c;
+        }
+
+        .header .search-box button {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .header .greeting {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header .greeting span {
+            margin-right: 10px;
+        }
+
+        .header .greeting .time {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .page-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .inventory-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .inventory-info .button {
+            background-color: #08979c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .inventory {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .inventory div {
+            background-color: #f4f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+        }
+
+        .inventory div h3 {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .inventory div p {
+            margin: 0;
+            color: #888;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .danger-button {
+            background-color: #f5222d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="logo.png" alt="Pharma One Logo">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Inventory</a>
+            <a href="#">Reports</a>
+            <a href="#">Configuration</a>
+            <a href="#">Contact Management</a>
+            <a href="#">Notifications</a>
+            <a href="#">Chat with Visitors</a>
+            <a href="#">Application Settings</a>
+            <a href="#">Covid-19</a>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <div class="search-box">
+                    <input type="text" placeholder="Search for anything here...">
+                    <button><img src="search-icon.png" alt="Search"></button>
+                </div>
+                <div class="greeting">
+                    <span>Good Morning</span>
+                    <div class="time">14 January 2022 - 2:24:04</div>
+                </div>
+            </div>
+
+            <h2 class="page-title">Inventory › List of Medicines › Azithral 500 Tablet</h2>
+            <p>List of medicines available for sales.</p>
+
+            <div class="inventory-info">
+                <h3>Edit Details</h3>
+                <button class="button">Send Stock Request</button>
+            </div>
+
+            <div class="card">
+                <div class="inventory">
+                    <div>
+                        <h3>298</h3>
+                        <p>Medicine ID</p>
+                    </div>
+                    <div>
+                        <h3>24</h3>
+                        <p>Medicine Group</p>
+                    </div>
+                    <div>
+                        <h3>298</h3>
+                        <p>Lifetime Supply</p>
+                    </div>
+                </div>
+                <h3>How to use</h3>
+                <p>Take this medication by mouth with or without food as directed by your doctor, usually once daily.</p>
+                <h3>Side Effects</h3>
+                <p>Dizziness, lightheadedness, drowsiness, nausea, vomiting, tiredness, excess saliva/drooling, blurred vision, weight gain, constipation, headache, and trouble sleeping may occur. If any of these effects persist or worsen, consult your doctor.</p>
+                <button class="danger-button">Delete Medicine</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

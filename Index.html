@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+        <div class="bg-gray-800 text-white w-64 p-4">
+            <!-- Logo and User Info -->
+            <div class="flex items-center mb-8">
+                <img src="https://via.placeholder.com/40" alt="Logo" class="rounded-full mr-3">
+                <div>
+                    <h1 class="text-2xl font-semibold">Pharma One</h1>
+                    <span>
+
+                        <p class="text-sm text-gray-400 w-fit">Subash </p>
+                        <svg width="4" class="float-right" height="18" viewBox="0 0 4 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 10C2.55228 10 3 9.55228 3 9C3 8.44772 2.55228 8 2 8C1.44772 8 1 8.44772 1 9C1 9.55228 1.44772 10 2 10Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M2 3C2.55228 3 3 2.55228 3 2C3 1.44772 2.55228 1 2 1C1.44772 1 1 1.44772 1 2C1 2.55228 1.44772 3 2 3Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M2 17C2.55228 17 3 16.5523 3 16C3 15.4477 2.55228 15 2 15C1.44772 15 1 15.4477 1 16C1 16.5523 1.44772 17 2 17Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        Super Admin
+
+                        </p>
+
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav>
+                <ul>
+                    <li class="py-2 px-4 bg-gray-700 rounded-md mb-2"><a href="#" class="flex items-center space-x-2">
+                            <span>Dashboard</span></a></li>
+                    <li class="py-2 px-4 hover:bg-gray-700 rounded-md mb-2"><a
+                            href="/inventory/inventory.html">Inventory</a></li>
+                    <li class="py-2 px-4 hover:bg-gray-700 rounded-md mb-2"><a href="#">Reports</a></li>
+                    <li class="py-2 px-4 hover:bg-gray-700 rounded-md mb-2"><a href="#">Configuration</a></li>
+                    <li class="py-2 px-4 hover:bg-gray-700 rounded-md mb-2"><a href="#">Contact Management</a></li>
+                    <li class="py-2 px-4 hover:bg-gray-700 rounded-md mb-2 flex justify-between">
+                        <span>Notifications</span>
+                        <span class="bg-red-600 text-white text-xs rounded-full px-2 py-1">1</span>
+                    </li>
+                    <li class="py-2 px-4 hover:bg-gray-700 rounded-md mb-2"><a href="#">Chat with Visitors</a></li>
+                    <li class="py-2 px-4 hover:bg-gray-700 rounded-md mb-2"><a href="#">Application Settings</a></li>
+                    <li class="py-2 px-4 hover:bg-gray-700 rounded-md mb-2"><a href="#">Covid-19</a></li>
+                    <li class="py-2 px-4 hover:bg-gray-700 rounded-md mb-2"><a href="#">Get Technical Help</a></li>
+                </ul>
+            </nav>
+
+            <footer class="mt-auto text-xs text-gray-500">
+                <p>Powered by Subash © 2022</p>
+                <p>v1.12</p>
+            </footer>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-6">
+            <!-- Top Bar -->
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex items-center space-x-2">
+                    <input type="text" placeholder="Search for anything here..."
+                        class="px-4 py-2 border rounded-md w-96">
+                    <select class="border rounded-md px-3 py-2 text-gray-600">
+                        <option>English (US)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Dashboard Overview -->
+            <div class="grid grid-cols-4 gap-4 mb-6">
+                <div class="p-4 bg-green-100 rounded-md">
+                    <h2 class="text-lg font-semibold text-green-700">Good</h2>
+                    <p class="text-sm text-gray-500">Inventory Status</p>
+                    <button class="mt-4 text-blue-600">View Detailed Report</button>
+                </div>
+                <div class="p-4 bg-yellow-100 rounded-md">
+                    <h2 class="text-lg font-semibold text-yellow-700">Rs. 8,55,875</h2>
+                    <p class="text-sm text-gray-500">Revenue : Jan 2022</p>
+                    <button class="mt-4 text-blue-600">View Detailed Report</button>
+                </div>
+                <div class="p-4 bg-blue-100 rounded-md">
+                    <h2 class="text-lg font-semibold text-blue-700">298</h2>
+                    <p class="text-sm text-gray-500">Medicines Available</p>
+                    <button class="mt-4 text-blue-600">Visit Inventory</button>
+                </div>
+                <div class="p-4 bg-red-100 rounded-md">
+                    <h2 class="text-lg font-semibold text-red-700">01</h2>
+                    <p class="text-sm text-gray-500">Medicine Shortage</p>
+                    <button class="mt-4 text-blue-600">Resolve Now</button>
+                </div>
+            </div>
+
+            <!-- Quick Reports -->
+            <div class="grid grid-cols-2 gap-4 mb-6 h-screen">
+                <div class="p-4 bg-white rounded-md shadow">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-sm font-semibold text-gray-600">My Pharmacy</h2>
+                        <a href="#" class="text-blue-600 text-xs">Go to User Management</a>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Total no of Suppliers: <span class="font-semibold">04</span>
+                    </p>
+                    <p class="text-sm text-gray-500">Total no of Users: <span class="font-semibold">05</span></p>
+                </div>
+
+                <div class="p-4 bg-white rounded-md shadow">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-sm font-semibold text-gray-600">Quick Report</h2>
+                        <span class="text-xs text-gray-500">January 2022</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Qty of Medicines Sold: <span
+                            class="font-semibold">70,856</span></p>
+                    <p class="text-sm text-gray-500">Invoices Generated: <span class="font-semibold">5,288</span></p>
+                </div>
+
+                <div class="p-4 bg-white rounded-md shadow">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-sm font-semibold text-gray-600">Inventory</h2>
+                        <a href="#" class="text-blue-600 text-xs">Go to Configuration</a>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Total no of Medicines: <span class="font-semibold">298</span>
+                    </p>
+                    <p class="text-sm text-gray-500">Medicine Groups: <span class="font-semibold">24</span></p>
+                </div>
+
+                <div class="p-4 bg-white rounded-md shadow">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-sm font-semibold text-gray-600">Customers</h2>
+                        <a href="#" class="text-blue-600 text-xs">Go to Customers Page</a>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Total no of Customers: <span class="font-semibold">845</span>
+                    </p>
+                    <p class="text-sm text-gray-500">Frequently bought item: <span
+                            class="font-semibold">Adalimumab</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

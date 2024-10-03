@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pharma One - Inventory</title>
+    <style>
+        /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+}
+
+nav {
+    width: 200px;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Specific styles */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.search-medicine {
+    margin-bottom: 20px;
+}
+
+/* Add more CSS styles as needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pharma One</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for anything...">
+                <button>Search</button>
+            </div>
+            <div class="language-selector">
+                <select>
+                    <option value="en">English (US)</option>
+                    </select>
+            </div>
+            <div class="date-time">
+                <p>Good Morning</p>
+                <p>14 January 2022 22:45:04</p>
+            </div>
+        </header>
+        <main>
+            <div class="user-info">
+                <img src="user-image.jpg" alt="User Image">
+                <p>Subash Super Admin</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Inventory</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Configuration</a></li>
+                    <li><a href="#">Contact Management</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Chat with Visitors</a></li>
+                    <li><a href="#">Application Settings</a></li>
+                    <li><a href="#">Covid-19</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h2>Inventory - List of Medicines</h2>
+                <h3>Azithral 500 Tablet</h3>
+                <p>List of medicines available for sales.</p>
+                <div class="search-medicine">
+                    <input type="text" placeholder="Search in Medicine Details">
+                    <button>Search</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Medicine ID</th>
+                            <th>Medicine Group</th>
+                            <th>Lifetime Supply</th>
+                            <th>Lifetime Sales</th>
+                            <th>Stock Left</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>298</td>
+                            <td></td>
+                            <td>298</td>
+                            <td>290</td>
+                            <td>08</td>
+                        </tr>
+                        </tbody>
+                </table>
+                <h4>How to use</h4>
+                <p>Take this medication by mouth with or without food as directed by your doctor, usually once daily.</p>
+                <h4>Side Effects</h4>
+                <p>Dizziness, lightheadedness, drowsiness, nausea, vomiting, tiredness, excess saliva/drooling, blurred vision, weight gain, constipation, headache, and trouble sleeping may occur. If any of these effects persist or worsen, consult your doctor.</p>
+                <button>Delete Medicine</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

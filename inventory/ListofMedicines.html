@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Medicines</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 h-screen flex">
+
+    <!-- Sidebar -->
+    <div class="bg-gray-800 text-white w-64 p-4 flex flex-col justify-between">
+        <!-- Logo and User Info -->
+        <div>
+            <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="Logo" class="h-10 w-10">
+                <h1 class="text-xl font-bold">Pharma One</h1>
+            </div>
+
+            <div class="mt-8">
+                <div class="flex items-center space-x-4">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h2 class="text-md font-semibold">Subash</h2>
+                        <span class="text-sm text-green-400">Super Admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="mt-10 space-y-4">
+                <a href="#" class="flex items-center px-4 py-2 rounded-md bg-gray-700 hover:bg-gray-600">
+                    Dashboard
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 rounded-md bg-gray-600">
+                    Inventory
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 rounded-md bg-gray-700 hover:bg-gray-600">
+                    List of Medicines
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 rounded-md hover:bg-gray-600">
+                    Medicine Groups
+                </a>
+                <!-- Additional Menu Items Here -->
+            </nav>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="space-y-4">
+            <a href="#" class="flex items-center px-4 py-2 rounded-md hover:bg-gray-600">
+                <span>Get Technical Help</span>
+            </a>
+            <span class="text-xs text-gray-400">Powered by Subash © 2022</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Inventory &gt; List of Medicines (298)</h2>
+            <button class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">+ Add New Item</button>
+        </div>
+
+        <p class="text-gray-600 mt-2">List of medicines available for sales.</p>
+
+        <!-- Search and Filter -->
+        <div class="flex items-center mt-4 space-x-4">
+            <input type="text" placeholder="Search Medicine Inventory..." class="flex-1 px-4 py-2 border rounded-md">
+            <button class="bg-gray-200 p-2 rounded-md hover:bg-gray-300">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 4v16m6-8H4"></path>
+                </svg>
+            </button>
+            <select class="border rounded-md px-4 py-2">
+                <option>- Select Group -</option>
+                <option>Generic Medicine</option>
+                <option>Diabetes</option>
+                <option>Pain Relief</option>
+            </select>
+        </div>
+
+        <!-- Medicines Table -->
+        <div class="mt-6 bg-white shadow-md rounded-lg overflow-hidden">
+            <table class="min-w-full">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="py-2 px-4 text-left font-medium text-gray-600">Medicine Name</th>
+                        <th class="py-2 px-4 text-left font-medium text-gray-600">Medicine ID</th>
+                        <th class="py-2 px-4 text-left font-medium text-gray-600">Group Name</th>
+                        <th class="py-2 px-4 text-left font-medium text-gray-600">Stock in Qty</th>
+                        <th class="py-2 px-4 text-left font-medium text-gray-600">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4">Augmentin 625 Duo Tablet</td>
+                        <td class="py-2 px-4">D06ID232435454</td>
+                        <td class="py-2 px-4">Generic Medicine</td>
+                        <td class="py-2 px-4">350</td>
+                        <td class="py-2 px-4 text-blue-600 hover:underline">View Full Detail &rarr;</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="py-2 px-4">Azithral 500 Tablet</td>
+                        <td class="py-2 px-4">D06ID232435451</td>
+                        <td class="py-2 px-4">Generic Medicine</td>
+                        <td class="py-2 px-4">20</td>
+                        <td class="py-2 px-4 text-blue-600 hover:underline">View Full Detail &rarr;</td>
+                    </tr>
+                    <!-- Repeat rows as needed -->
+                </tbody>
+            </table>
+
+            <!-- Pagination -->
+            <div class="bg-gray-100 px-4 py-2 flex justify-between items-center">
+                <span class="text-sm text-gray-600">Showing 1 - 8 results of 298</span>
+                <div class="flex space-x-2">
+                    <button class="px-3 py-1 bg-white border rounded-md"> &lt; </button>
+                    <button class="px-3 py-1 bg-gray-200 border rounded-md">01</button>
+                    <button class="px-3 py-1 bg-white border rounded-md"> &gt; </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

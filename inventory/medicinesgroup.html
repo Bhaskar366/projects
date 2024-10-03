@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Details - Azithral 500 Tablet</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 h-screen flex">
+
+    <!-- Sidebar -->
+    <div class="bg-gray-800 text-white w-64 p-4 flex flex-col justify-between">
+        <!-- Logo and User Info -->
+        <div>
+            <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="Logo" class="h-10 w-10">
+                <h1 class="text-xl font-bold">Pharma One</h1>
+            </div>
+
+            <div class="mt-8">
+                <div class="flex items-center space-x-4">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h2 class="text-md font-semibold">Subash</h2>
+                        <span class="text-sm text-green-400">Super Admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="mt-10 space-y-4">
+                <a href="#" class="flex items-center px-4 py-2 rounded-md bg-gray-700 hover:bg-gray-600">
+                    Dashboard
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 rounded-md bg-gray-600">
+                    Inventory
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 rounded-md bg-gray-700 hover:bg-gray-600">
+                    List of Medicines
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 rounded-md hover:bg-gray-600">
+                    Medicine Groups
+                </a>
+                <!-- Additional Menu Items Here -->
+            </nav>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="space-y-4">
+            <a href="#" class="flex items-center px-4 py-2 rounded-md hover:bg-gray-600">
+                <span>Get Technical Help</span>
+            </a>
+            <span class="text-xs text-gray-400">Powered by Subash © 2022</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Inventory &gt; List of Medicines &gt; Azithral 500 Tablet</h2>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Edit Details</button>
+        </div>
+
+        <p class="text-gray-600 mt-2">List of medicines available for sales.</p>
+
+        <!-- Medicine Details -->
+        <div class="grid grid-cols-2 gap-4 mt-6">
+            <div class="bg-white shadow-md rounded-lg p-4">
+                <h3 class="font-semibold text-lg">Medicine</h3>
+                <p class="mt-2">298 Medicine ID</p>
+                <p>24 Medicine Group</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-4">
+                <h3 class="font-semibold text-lg">Inventory in Qty</h3>
+                <p class="mt-2">298 Lifetime Supply</p>
+                <p>290 Lifetime Sales</p>
+                <p>08 Stock Left</p>
+                <button class="mt-4 bg-gray-200 px-4 py-2 rounded-md hover:bg-gray-300">Send Stock Request</button>
+            </div>
+        </div>
+
+        <!-- How to Use Section -->
+        <div class="mt-6 bg-white shadow-md rounded-lg p-4">
+            <h3 class="font-semibold text-lg border-b pb-2">How to use</h3>
+            <p class="mt-2">Take this medication by mouth with or without food as directed by your doctor, usually once daily.</p>
+        </div>
+
+        <!-- Side Effects Section -->
+        <div class="mt-6 bg-white shadow-md rounded-lg p-4">
+            <h3 class="font-semibold text-lg border-b pb-2">Side Effects</h3>
+            <p class="mt-2">Dizziness, lightheadedness, drowsiness, nausea, vomiting, tiredness, excess saliva/drooling, blurred vision, weight gain, constipation, headache, and trouble sleeping may occur. If any of these effects persist or worsen, consult your doctor.</p>
+        </div>
+
+        <!-- Delete Button -->
+        <button class="mt-6 bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">Delete Medicine</button>
+    </div>
+
+</body>
+
+</html>

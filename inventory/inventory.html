@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 h-screen flex">
+
+    <!-- Sidebar -->
+    <div class="bg-gray-800 text-white w-64 p-4 flex flex-col justify-between">
+        <!-- Logo and User Info -->
+        <div>
+            <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="Logo" class="h-10 w-10">
+                <h1 class="text-xl font-bold">Pharma One</h1>
+            </div>
+
+            <div class="mt-8">
+                <div class="flex items-center space-x-4">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h2 class="text-md font-semibold">Subash</h2>
+                        <span class="text-sm text-green-400">Super Admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="mt-10 space-y-4">
+                <a href="#" class="flex items-center px-4 py-2 rounded-md bg-gray-700 hover:bg-gray-600">
+                    <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2H5a2 2 0 01-2-2V4zM16 4a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2h-3a2 2 0 01-2-2V4zM3 16a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2H5a2 2 0 01-2-2v-3zM16 16a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2h-3a2 2 0 01-2-2v-3z" />
+                    </svg>
+                    Dashboard
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 rounded-md hover:bg-gray-600">
+                    Inventory
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 rounded-md hover:bg-gray-600">
+                    List of Medicines
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 rounded-md hover:bg-gray-600">
+                    Medicine Groups
+                </a>
+                <!-- Additional Menu Items Here -->
+            </nav>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="space-y-4">
+            <a href="#" class="flex items-center px-4 py-2 rounded-md hover:bg-gray-600">
+                <span>Get Technical Help</span>
+            </a>
+            <span class="text-xs text-gray-400">Powered by Subash © 2022</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Inventory</h2>
+            <button class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">+ Add New Item</button>
+        </div>
+
+        <p class="text-gray-600 mt-2">List of medicines available for sales.</p>
+
+        <!-- Inventory Cards -->
+        <div class="grid grid-cols-3 gap-6 mt-6">
+            <div class="bg-white p-4 rounded-lg shadow-lg border-t-4 border-blue-500">
+                <h3 class="text-lg font-bold">298</h3>
+                <p class="text-gray-600">Medicines Available</p>
+                <button class="mt-4 text-blue-600 hover:text-blue-500">View Full List &rarr;</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg border-t-4 border-green-500">
+                <h3 class="text-lg font-bold">02</h3>
+                <p class="text-gray-600">Medicine Groups</p>
+                <button class="mt-4 text-green-600 hover:text-green-500">View Groups &rarr;</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg border-t-4 border-red-500">
+                <h3 class="text-lg font-bold">01</h3>
+                <p class="text-gray-600">Medicine Shortage</p>
+                <button class="mt-4 text-red-600 hover:text-red-500">Resolve Now &rarr;</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
